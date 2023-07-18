@@ -1,15 +1,11 @@
 const express = require('express');
 
-const emojis = require('./emojis');
+const cuteAnimals = require('./cuteAnimals');
+const cutePlants = require('./cutePlants');
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  res.json({
-    message: 'API - 👋🌎🌍🌏',
-  });
-});
-
-router.use('/emojis', emojis);
+router.use('/cute-amnal', cuteAnimals);
+router.use('/cute-plants', cuteAnimals);
 
 module.exports = router;

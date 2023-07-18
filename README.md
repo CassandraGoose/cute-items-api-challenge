@@ -1,10 +1,68 @@
-# Express API Starter
+# Fun with Express API
 
-How to use this template:
+Oh no! This API is broken! Find and fix the issues to gain some fluency with Express. 
 
-```sh
-npx create-express-api --directory my-api-name
+Read through the instructions for more guidance. 
+
+---
+
+## About
+
+This basic API is based on the [Express Api Starter Template](https://github.com/w3cj/express-api-starter)
+
+This API allows a user to see cute animals, cute plants, and cute houses. A user _should_ be able to visit `/api/v1` and then the corresponding route to see these items. For example `http://localhost:3000/api/v1/cute-animals` should give a list of cute animals. HOWEVER, this app is broken and it's your job to fix it!
+
+---
+
+## Setup
+
+- Clone down repository
+- Run `npm i` or `npm install`
+- Run `npm run dev` to start a development server
+- Test with `npm run test`
+
+---
+
+## Instructions
+
+You may use the provded tests to guide your development. You'll know if you've completed the tasks below if all of your tests pass! These tests might not look like tests you've used in the past - use your knowledge of other kinds of testing to figure them out. 
+
+You'll need to find and fix the following bugs. Once you're done, add a couple of new features! The bugs may be incorrect syntax, mis-spelled words, messed up variables/values/imports, etc. 
+
+- **BUGS:** 
+  - The app doesn't run. figure out why!
+  - A user should be able to see cute animals at the endpoint `/api/v1/cute-animals`, but it isn't working. Figure out why!
+  - The plants endpoint isn't working. When the user vists the endpoint `/api/v1/cute-plants`, they should get a list of all cute plants, but it's returning animals! Figure out why.
+
+- **NEW FEATURES**
+  - Add the ability to get houses. Right now the endpoint `/api/v1/cute-houses` doesn't do anything. 
+  - (ADVANCED) Add the ability to get sorted plants. The user should be able to visit `/api/v1/cute-plants?orderby=cuteness_rating` so that it returns sorted plants instead of just all the plants in random order. Consider researching how to handle query parameters in Node/Express.
+
+If you want to continue to learn, add functionality to Create new animals, plants, and houses, Update animals, plants, and houses, and Delete animals, plants, and houses. These items are not currently included in the tests. 
+ 
+---
+
+## Lint
+
 ```
+npm run lint
+```
+
+## Test
+
+```
+npm test
+```
+
+## Development
+
+```
+npm run dev
+```
+
+---
+
+## About this application:
 
 Includes API Server utilities:
 
@@ -28,26 +86,3 @@ Development utilities:
 * [supertest](https://www.npmjs.com/package/supertest)
   * HTTP assertions made easy via superagent.
 
-## Setup
-
-```
-npm install
-```
-
-## Lint
-
-```
-npm run lint
-```
-
-## Test
-
-```
-npm test
-```
-
-## Development
-
-```
-npm run dev
-```
