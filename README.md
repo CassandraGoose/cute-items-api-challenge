@@ -1,6 +1,6 @@
 # Fun with Express API
 
-Oh no! This API is broken! Find and fix the issues to gain some fluency with Express. 
+Oh no! This API is broken! Find and fix the issues to gain some fluency with Express. This project is a good project to use to assess an entry-level React developer's fluency in the hiring pipeline. 
 
 Read through the instructions for more guidance. 
 
